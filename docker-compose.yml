@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  server:
+    build:
+      context: ./server  # Path to your server Dockerfile
+    ports:
+      - "5000:5000"  # Exposes port 5000 on the host to port 5000 on the server container
+    env_file:
+      - .env  # Loads environment variables from .env file
+
+  client:
+    build:
+      context: ./client  # Path to your client Dockerfile
+    ports:
+      - "3000:3000"  # Exposes port 3000 on the host to port 3000 on the client container

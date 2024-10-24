@@ -1,0 +1,63 @@
+/* Styles for the container */
+.container {
+    margin-top: 20px;
+  }
+  
+  /* Styles for the post title */
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for the post description */
+  .post-description {
+    color: #505050;
+    margin-top: 10px;
+  }
+  
+  /* Styles for the related topics */
+  .related-topics {
+    margin-top: 20px;
+  }
+  
+  /* Styles for the badges */
+  .badge {
+    font-size: 14px;
+    white-space: nowrap; /* Prevent tags from breaking into multiple lines */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Show ellipsis (...) for overflow */
+  }
+  
+  /* Styles for the upvote button */
+  .upvote-button {
+    margin-top: 10px;
+  }
+  
+  /* Styles for the reply section */
+  .reply-section {
+    margin-top: 20px;
+  }
+  
+  /* Styles for each individual reply */
+  .reply {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  /* Styles for the reply author */
+  .reply-author {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for the reply content */
+  .reply-content {
+    color: #505050;
+  }
+  
+  /* Styles for the reply upvote button */
+  .reply-upvote-button {
+    margin-top: 10px;
+  }
+  

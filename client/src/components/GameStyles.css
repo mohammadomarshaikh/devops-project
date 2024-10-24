@@ -1,0 +1,103 @@
+.navigation-section {
+    position: sticky;
+    top: 75px;
+}
+
+
+
+.year-section,
+.yellow-section {
+    text-align: center;
+    color: white;
+    padding: 10px 0; /* Adjust padding */
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 0;
+    background-color: darkgoldenrod;
+    opacity: 0; /* Initially visible */
+    transition: opacity 0.5s ease; /* Add transition effect */
+    width: 100%;
+}
+
+
+.year-section h2,
+.year-section p,
+.yellow-section h2,
+.yellow-section p {
+    margin: 5px 0; /* Adjust margin */
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.year-section img,
+.yellow-section img {
+    margin-top: 10px; 
+    max-width: 100%;
+    opacity: 1; /* Initially visible */
+    transition: opacity 0.5s ease; /* Add transition effect */
+}
+
+.year-section.yellow-section {
+    background-color: black;
+}
+
+
+
+.goldenrod-button {
+    display: block;
+    width: 200px;
+    padding: 15px;
+    margin: 20px auto;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition effect for smoother color change */
+}
+
+/* Apply black background to odd-indexed year sections */
+.year-section:nth-child(odd) .goldenrod-button {
+    background-color: black;
+    color: goldenrod; 
+}
+
+/* Apply yellow background to even-indexed year sections */
+.year-section:nth-child(even) .goldenrod-button {
+    background-color: goldenrod;
+    color: black; 
+}
+
+/* Apply yellow background to yellow sections */
+.yellow-section .goldenrod-button {
+    background-color: goldenrod;
+    color: black; 
+}
+
+
+@media only screen and (max-width: 768px) {
+    .year-section img {
+        max-width: 100%; 
+        width: 100%; 
+        max-height: auto;
+    }
+
+
+    .nav-link {
+        margin: 0 4px; 
+        padding: 0.1px;
+    }
+
+    .nav {
+        display: flex; 
+        flex-wrap: nowrap; 
+        overflow-x: auto; 
+        justify-content: flex-start;
+    }
+
+    .navigation-section {
+        position: sticky;
+        top: 60px;
+    }
+    
+}

@@ -1,0 +1,83 @@
+/*Footer*/
+footer {
+  padding: 10px 100px;
+  background: #050e2d; /* Change background color */
+}
+
+footer .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .info .logo {
+  position: relative;
+  color: #fff; /* Change color to white */
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+footer .info p {
+  color: #dbd9d9;
+}
+
+footer .info ul {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .info ul li {
+  list-style: none;
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #1aeeef;
+}
+
+footer .info ul li:hover {
+  background: #1aeeef;
+  border: none;
+  box-shadow: 0 0 10px #1aeeef;
+}
+
+footer .info ul li a i {
+  font-size: 1.5em;
+  color: #fff; /* Change color to white */
+}
+
+footer .info ul li:hover a i {
+  color: #050e2d;
+}
+
+/* Media Query for screens smaller than 768px (typical tablets) */
+@media (max-width: 768px) {
+  footer {
+      padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  footer .info {
+      flex-direction: column; /* Change direction to column for smaller screens */
+      text-align: center; /* Center align content */
+  }
+
+  footer .info .logo {
+      margin-bottom: 10px; /* Add some space below the logo */
+  }
+
+  footer .info ul li {
+      height: 40px; /* Reduce height of social icons */
+      width: 40px; /* Reduce width of social icons */
+      margin: 5px;
+  }
+
+  footer .info ul li a i {
+      font-size: 1.2em; /* Reduce icon size */
+  }
+}
